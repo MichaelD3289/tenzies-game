@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Karla", "Inter";
+  background-color: #0B2434;
+}
+
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gameBoard {
+  padding: 50px;
+  max-width: 600px;
+  height: 500px;
+  background-color: #F5F5F5;
+  border-radius: 15px;
+  box-shadow: 3px 3px 10px #535353;
+  border: 3px inset rgb(88, 96, 104);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.dieGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 25px;
+}
+
+.dice {
+  width: 55px;
+  height: 55px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.15);
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  font-family: Karla;
+font-size: 36px;
+font-weight: 700;
+cursor: pointer;
+}
+
+.rollBtn {
+  border: none;
+  background-color: #5035FF;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.35);
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  color: white;
+  cursor: pointer;
+  transition: opacity .1s, transform .5s linear;
+}
+
+.rollBtn:hover {
+  opacity: 90%;
+}
+
+.rollBtn:active {
+  transform: scale(0.9);
+  opacity: 80%;
+}
+
+.isHeld {
+  background-color: #59E391;
+}
