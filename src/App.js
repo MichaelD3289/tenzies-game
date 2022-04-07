@@ -20,7 +20,7 @@ useEffect(() => {
     localStorage.setItem("lowestRoll", numberRolled)
     setLowestRolls(numberRolled)
   }
-}, [tenzies, lowestRolls])
+}, [tenzies])
 
 
 useEffect(() => {

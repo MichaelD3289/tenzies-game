@@ -10,12 +10,13 @@ let dieDisplay = [
   [1, 3, 5, 7, 9],
   [1, 3, 4, 6, 7, 9]
 ]
+
 let dotArray = [1, 2, 3, 4, 5, 6, 7, 8, 9]
   const dotElements = dotArray.map(item => {
   return  <div 
     key={nanoid()}
     className={
-      dieDisplay[value - 1].includes(item) ? "dot display" : "display"
+      dieDisplay[value - 1].includes(item) ? "dot display" : "dot"
     } ></div>
   })
 
